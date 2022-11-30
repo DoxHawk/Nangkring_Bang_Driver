@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "724512205413",
+    "project_id": "nangkring-bang",
+    "storage_bucket": "nangkring-bang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724512205413:android:03b8c75b9165332dbdf48c",
+        "android_client_info": {
+          "package_name": "com.example.nangkringbang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724512205413-gvg53k2amnt55o91in8l7o71h863sqju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2AYtfEka3IYa1lOssLsHuACPHUR9qEL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724512205413-gvg53k2amnt55o91in8l7o71h863sqju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724512205413:android:2649f6c148111c7dbdf48c",
+        "android_client_info": {
+          "package_name": "com.example.nangkringbangdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724512205413-gvg53k2amnt55o91in8l7o71h863sqju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2AYtfEka3IYa1lOssLsHuACPHUR9qEL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724512205413-gvg53k2amnt55o91in8l7o71h863sqju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

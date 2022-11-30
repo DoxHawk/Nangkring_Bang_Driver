@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:fillViewport="true"
+    android:layout_marginTop="@dimen/_24sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_16sdp">
+
+        <TextView
+            android:id="@+id/txtGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, "
+            android:textSize="@dimen/_24ssp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_48sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtGreetingUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtGreeting"
+            app:layout_constraintEnd_toStartOf="@+id/imgUserHome"
+            app:layout_constraintStart_toEndOf="@+id/txtGreeting" />
+
+        <TextView
+            android:id="@+id/txtTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/txtGreeting"
+            app:layout_constraintStart_toStartOf="@+id/txtGreeting"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUserHome"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@color/colorAccent"
+            android:layout_marginEnd="@dimen/_24sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtGreeting"
+            app:layout_constraintBottom_toBottomOf="@+id/txtGreeting"/>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/txtGreetingEveryday"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/k_greeting"-->
+        <!--            android:textSize="@dimen/_12ssp"-->
+        <!--            android:layout_marginTop="@dimen/_24sdp"-->
+        <!--            android:layout_marginStart="@dimen/_16sdp"-->
+        <!--            android:layout_marginEnd="@dimen/_16sdp"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/txtHari"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/cvReminder"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"/>-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvReminder"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txtTanggal"
+            app:layout_constraintBottom_toTopOf="@+id/txtKat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/day"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtGreetDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ucapan waktu"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Awali dengan quotes"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:textColor="@color/black"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    app:layout_constraintTop_toBottomOf="@+id/txtGreetDay"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtPop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:text="Orders list"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:typeface="sans"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
+            app:layout_constraintTop_toBottomOf="@+id/cvReminder" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
