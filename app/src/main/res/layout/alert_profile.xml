@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_24sdp"
             android:gravity="center"
-            app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+            app:layout_constraintBottom_toTopOf="@+id/txtTelp"
             app:layout_constraintTop_toBottomOf="@+id/txtNama">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -70,16 +70,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtEmail"
+            android:id="@+id/txtTelp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_24sdp"
             android:gravity="center"
-            app:layout_constraintBottom_toTopOf="@+id/txtPass"
+            app:layout_constraintBottom_toTopOf="@+id/txtAddress"
             app:layout_constraintTop_toBottomOf="@+id/txtUser">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/e_Email"
+                android:id="@+id/e_Telp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_phone"
@@ -87,36 +87,32 @@
                 android:hint="Telp"
                 android:imeOptions="actionNext"
                 android:inputType="phone"
-                android:lines="1"
-                android:maxLength="50"
+                android:maxLength="20"
                 android:maxLines="1"
-                android:paddingStart="@dimen/_16sdp"
-                android:singleLine="true" />
+                android:paddingStart="@dimen/_16sdp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtPass"
+            android:id="@+id/txtAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_24sdp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEmail">
+            app:layout_constraintTop_toBottomOf="@+id/txtTelp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/e_Pass"
+                android:id="@+id/e_Address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_lock"
                 android:drawablePadding="@dimen/_8sdp"
                 android:hint="Alamat"
                 android:imeOptions="actionNext"
-                android:inputType="textPassword"
-                android:lines="1"
+                android:inputType="text"
                 android:maxLength="30"
-                android:maxLines="1"
-                android:paddingStart="@dimen/_16sdp"
-                android:singleLine="true" />
+                android:maxLines="4"
+                android:paddingStart="@dimen/_16sdp" />
         </com.google.android.material.textfield.TextInputLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -53,6 +53,7 @@ public class Adapter_Order extends FirestoreRecyclerAdapter<Model_Orders_Driver,
             holder.o_sts.setImageResource(R.drawable.ic_batal);
         }
         holder.o_total.setText(formatRupiah(model.getPesanan_sub()));
+        holder.o_alamat.setText(model.getPesanan_alamat());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -202,17 +202,17 @@ public class Fragment_Home extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setNestedScrollingEnabled(true);
 
-        adpt_o.setOnItemClickListener(new Adapter_Order.OnItemClickListener() {
-            @Override
-            public void onItemClick(DocumentSnapshot documentSnapshot, int position) {
-                if (documentSnapshot != null) {
-                    Intent menuIntent = new Intent(Fragment_Home.this.getActivity(), Activity_Order_Detail.class);
-                    menuIntent.putExtra("KEY_ORDER_ID", documentSnapshot.getId());
-                    if (menuIntent.resolveActivity(Fragment_Home.this.getActivity().getPackageManager()) != null) {
-                        Fragment_Home.this.getActivity().startActivity(menuIntent);
-                    }
-                }
-            }
-        });
+//        adpt_o.setOnItemClickListener(new Adapter_Order.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(DocumentSnapshot documentSnapshot, int position) {
+//                if (documentSnapshot != null) {
+//                    Intent menuIntent = new Intent(Fragment_Home.this.getActivity(), Activity_Order_Detail.class);
+//                    menuIntent.putExtra("KEY_ORDER_ID", documentSnapshot.getId());
+//                    if (menuIntent.resolveActivity(Fragment_Home.this.getActivity().getPackageManager()) != null) {
+//                        Fragment_Home.this.getActivity().startActivity(menuIntent);
+//                    }
+//                }
+//            }
+//        });
     }
 }
